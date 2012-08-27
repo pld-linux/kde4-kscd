@@ -4,7 +4,7 @@
 
 Summary:	KDE CD Player
 Summary(pl.UTF-8):	Odtwarzacz CD dla KDE
-Name:		kde4-kscd
+Name:		kde4-%{orgname}
 Version:	4.9.0
 Release:	0.1
 License:	GPL v2+
