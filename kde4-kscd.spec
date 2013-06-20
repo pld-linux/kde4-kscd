@@ -6,7 +6,7 @@ Summary:	KDE CD Player
 Summary(pl.UTF-8):	Odtwarzacz CD dla KDE
 Name:		kde4-%{orgname}
 Version:	4.10.4
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
@@ -69,5 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/apps/solid/actions/kscd-play-audiocd.desktop
 %{_datadir}/apps/kscd
 %{_iconsdir}/hicolor/*/apps/kscd.png
-%{_iconsdir}/oxygen/*/actions/kscd-dock.png
 %{_datadir}/dbus-1/interfaces/org.kde.kscd.cdplayer.xml
