@@ -5,12 +5,12 @@
 Summary:	KDE CD Player
 Summary(pl.UTF-8):	Odtwarzacz CD dla KDE
 Name:		kde4-%{orgname}
-Version:	4.12.3
+Version:	4.12.4
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	ce1f504e69f3571f2c71aeafdb49048f
+# Source0-md5:	20fb0cabdb5a90fd7c641604f785f1af
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	alsa-lib-devel
 BuildRequires:	cmake >= 2.8.0
