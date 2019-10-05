@@ -6,16 +6,17 @@ Summary:	KDE CD Player
 Summary(pl.UTF-8):	Odtwarzacz CD dla KDE
 Name:		kde4-%{orgname}
 Version:	4.14.3
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	af3a34791733beaf8335d37b8ecc9e54
+Patch0:		musicbrainz5.patch
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	alsa-lib-devel
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
-BuildRequires:	libmusicbrainz3-devel >= 1:3.0.0
+BuildRequires:	libmusicbrainz5-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	kde4-libkcddb-devel
 BuildRequires:	pkgconfig
@@ -39,8 +40,10 @@ graficzną interpretację granych dźwięków.
 
 %prep
 %setup -q -n %{orgname}-%{version}
+%patch0 -p1
 
 %build
+#export CXXFLAGS="%{rpmcxxflags} -std=gnu++98"
 install -d build
 cd build
 %cmake \
